@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style-type: none;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'south afirkas 2100';
+    src: url('/fonts/south\ afirkas\ 2100.ttf') format('woff2'),
+         url('/fonts/south\ afirkas\ 2100.ttf') format('woff'),
+         url('/fonts/south\ afirkas\ 2100.ttf') format('truetype'); /* Fallback for older browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,html {
+    font-family: 'south afirkas 2100';
+  
+}
