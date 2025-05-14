@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
    padding: 0;
     margin: 0;
@@ -22,5 +25,64 @@
 
 body,html {
     font-family: 'south afirkas 2100';
-  
+    /* font-family: "Poppins", sans-serif; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.transform {
+    will-change: transform;
+}
+
+.nav-hero-container {
+    background-image: url('/dist/images/heroBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-hero-container {
+        height: 90vh;
+    }
+    
+}
+
+.nav-content {
+    position: relative;
+    z-index: 20;
+}
+
+#specialKeke {
+     font-family: 'south afirkas 2100';
+}
+#heroP {
+   font-family: "Poppins", sans-serif !important;
+   font-size: 1.35rem;
+   line-height: 100%;
+   font-weight: 400;
+}
+
+/* #hero-image-container {
+    position: static;
+} */
+
+@media (min-width: 768px) {
+    #hero-image-container {
+        position: absolute;
+        width: 663.84px;
+        height: 400px;
+        top: 300px;
+        left: 750px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+    /* Adjust hero section to allow absolute positioning */
+    section.nav-hero-bg {
+        position: relative;
+    }
 }
