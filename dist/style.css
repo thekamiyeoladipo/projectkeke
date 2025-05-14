@@ -710,12 +710,16 @@ video {
   height: 1.5rem;
 }
 
-.h-\[60vh\] {
-  height: 60vh;
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-1 {
@@ -1159,7 +1163,7 @@ body,html {
 
 @media screen and (max-width: 768px) {
   .nav-hero-container {
-    height: 75vh;
+    height: 83vh;
   }
 }
 
