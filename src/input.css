@@ -39,12 +39,12 @@ body,html {
     width: 100vw;
     position: relative;
 }
-.shared-bg {
+/* .shared-bg {
     background-image: url('../dist/images/backgroundHero.svg') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 @media screen and (max-width: 768px) {
     .nav-hero-container {
         height: 90vh;
