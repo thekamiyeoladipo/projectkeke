@@ -1149,6 +1149,7 @@ body,html {
   height: 100vh;
   width: 100vw;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .shared-bg {
@@ -1159,7 +1160,7 @@ body,html {
 
 @media screen and (max-width: 768px) {
   .nav-hero-container {
-    height: 60vh;
+    height: 70%;
   }
 }
 
