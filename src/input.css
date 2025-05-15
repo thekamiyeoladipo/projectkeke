@@ -68,6 +68,10 @@ body,html {
    font-weight: 400;
 }
 
+.poppins {
+    font-family: "Poppins", sans-serif !important;
+}
+
 /* #hero-image-container {
     position: static;
 } */
@@ -89,3 +93,17 @@ body,html {
         position: relative;
     }
 }
+
+
+.why {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+   .why {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+   } 
+}
+
+ 
