@@ -10,8 +10,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Bootstrap icons has been installed through the CLI-->
+<style>
+    @media (max-width: 767px) {
+        footer .container {
+            align-items: center !important;
+        }
+        footer .flex {
+            justify-content: center !important;
+        }
+        footer .text-center {
+            text-align: center !important;
+        }
+    }
+</style>
 </head>
 <body class="">
+    <!--Back to top button-->
+    <button id="backToTopBtn" 
+    class="fixed bottom-6 right-6 z-50 hidden p-3 rounded-full bg-orange text-white shadow-lg hover:bg-gray-800 transition-opacity duration-300"
+    aria-label="Back to Top">
+    TOP
+</button>
+
 
  
  <!-- Combined Nav and Hero Container -->
@@ -62,11 +82,11 @@
         
                     <!-- Menu items -->
                     <div class="container mx-auto h-full flex flex-col justify-start pt-12 space-y-6 text-left">
-                        <a href="#" class="block text-xl py-2 text-grayBlack hover:text-yellow-500 mobile-menu-link">FOLLOW US
+                        <a href="#footer" class="block text-xl py-2 text-grayBlack hover:text-yellow-500 mobile-menu-link">FOLLOW US
                             TALK</a>
-                        <a href="#" class="block text-xl py-2 text-grayBlack hover:text-yellow-500 mobile-menu-link">WHY YOU GO
+                        <a href="#why" class="block text-xl py-2 text-grayBlack hover:text-yellow-500 mobile-menu-link">WHY YOU GO
                             LIKE KEKE</a>
-                        <a href="#" class="block text-xl py-2 text-grayBlack hover:text-yellow-500 mobile-menu-link">HOW E DEY
+                        <a href="#howdy" class="block text-xl py-2 text-grayBlack hover:text-yellow-500 mobile-menu-link">HOW E DEY
                             WORK</a>
                         <a href="#"
                             class="block bg-yellow-500 text-white px-4 py-3 rounded-lg text-xl font-bold hover:bg-yellow-600 max-w-xs mobile-menu-link">DOWNLOAD
@@ -112,114 +132,122 @@
 
 
 <!--Why Choose Keke-->
-<section class="bg-white py-8 md:py-12 px-4">
-    <div class="container mx-auto">
-        <h2 id="" class="why text-4xl md:text-5xl font-bold text-left mb-6">WHY YOU GO LIKE <br> KEKE</h2>
+<section id="why" class="bg-white py-8 md:py-12 px-4">
+  <div class="container mx-auto">
+    <h2 class="why text-4xl md:text-5xl font-bold text-left mb-6" data-aos="fade-up" data-aos-duration="800">
+      WHY YOU GO LIKE <br> KEKE
+    </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <!-- Card 1 -->
-            <div class="p-6 rounded-lg flex justify-center">
-                <img src="images/FRAME1.svg" alt="" class="w-[100%] h-auto max-h-[500px] md:max-h-[400px]">
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <!-- Card 1 -->
+      <div class="p-6 rounded-lg flex justify-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+        <img src="images/FRAME1.svg" alt="" class="w-full h-auto max-h-[500px] md:max-h-[400px]">
+      </div>
 
-            <!-- Card 2 -->
-            <div class="p-6 rounded-lg flex justify-center">
-                <img src="images/FRAME2.svg" alt="" class="w-[100%] h-auto max-h-[500px] md:max-h-[400px]">
-            </div>
+      <!-- Card 2 -->
+      <div class="p-6 rounded-lg flex justify-center" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
+        <img src="images/FRAME2.svg" alt="" class="w-full h-auto max-h-[500px] md:max-h-[400px]">
+      </div>
 
-            <!-- Card 3 -->
-            <div class="p-6 rounded-lg flex justify-center">
-                <img src="images/FRAME3.svg" alt="" class="w-[100%] h-auto max-h-[500px] md:max-h-[400px]">
-            </div>
-        </div>
+      <!-- Card 3 -->
+      <div class="p-6 rounded-lg flex justify-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
+        <img src="images/FRAME3.svg" alt="" class="w-full h-auto max-h-[500px] md:max-h-[400px]">
+      </div>
     </div>
+  </div>
 </section>
+
 <!--Why choose keke ends here-->
 
 <!--How E Dey Work-->
-<section class="bg-transparent py-3 md:py-12 px-4">
-    <div class="container mx-auto">
-        <h2 class="why text-4xl md:text-5xl font-bold text-left mb-6">HOW E DEY <br> WORK</h2>
+<section id="howdy" class="bg-transparent py-3 md:py-12 px-4">
+  <div class="container mx-auto">
+    <h2 class="why text-4xl md:text-5xl font-bold text-left mb-6" data-aos="fade-up" data-aos-duration="800">
+      HOW E DEY <br> WORK
+    </h2>
 
-        <div class="flex flex-col md:flex-row items-center gap-8">
-            <!-- Left Column (Text Content) -->
-            <div class="w-full md:w-2/5 relative rounded-lg overflow-hidden"
-                style="background-image: url('images/howEdeyWork.png'); background-size: cover; background-position: center;">
-                <div class=" bg-opacity-80 p-8 h-full">
-                    <!-- Step 1 -->
-                    <div class="mb-8">
-                        <div class="text-white text-2xl font-bold mb-2">STEP 1: "DOWNLOAD THE APP"</div>
-                        <p class="text-lg text-white poppins">
-                            Our app dey for Android and iOS, you fit <br> book keke in just one click.
-                        </p>
-                    </div>
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Left Column (Text Content) -->
+      <div
+        class="w-full md:w-2/5 relative rounded-lg overflow-hidden"
+        style="background-image: url('images/howEdeyWork.png'); background-size: cover; background-position: center;"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <div class="bg-opacity-80 p-8 h-full">
+          <!-- Step 1 -->
+          <div class="mb-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <div class="text-white text-2xl font-bold mb-2">STEP 1: "DOWNLOAD THE APP"</div>
+            <p class="text-lg text-white poppins">
+              Our app dey for Android and iOS, you fit <br> book keke in just one click.
+            </p>
+          </div>
 
-                    <!-- Step 2 -->
-                    <div class="mb-8">
-                        <div class="text-white text-2xl font-bold mb-2">STEP 2: "BOOK YOUR RIDE"</div>
-                        <p class="text-lg text-white poppins">
-                            Just enter your location and where you <br> dey go. Then choose your keke.
-                        </p>
-                    </div>
+          <!-- Step 2 -->
+          <div class="mb-8" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
+            <div class="text-white text-2xl font-bold mb-2">STEP 2: "BOOK YOUR RIDE"</div>
+            <p class="text-lg text-white poppins">
+              Just enter your location and where you <br> dey go. Then choose your keke.
+            </p>
+          </div>
 
-                    <!-- Step 3 -->
-                    <div class="mb-8">
-                        <div class="text-white text-2xl font-bold mb-2">STEP 3: "ENJOY THE RIDE"</div>
-                        <p class="text-lg text-white poppins">
-                            Relax for seat, enjoy your ride reach <br> your destination.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Column (SVG Image) -->
-            <!-- Right Column (SVG Image) -->
-            <div id="how-it-works-image" class="w-full md:w-3/5 flex justify-center order-first md:order-none">
-                <img src="images/Group 2419.svg" alt="KEKE app process" class="w-full h-auto max-h-[500px]">
-            </div>
+          <!-- Step 3 -->
+          <div class="mb-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
+            <div class="text-white text-2xl font-bold mb-2">STEP 3: "ENJOY THE RIDE"</div>
+            <p class="text-lg text-white poppins">
+              Relax for seat, enjoy your ride reach <br> your destination.
+            </p>
+          </div>
         </div>
+      </div>
+
+      <!-- Right Column (SVG Image) -->
+      <div
+        id="how-it-works-image"
+        class="w-full md:w-3/5 flex justify-center order-first md:order-none"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <img src="images/Group 2419.svg" alt="KEKE app process" class="w-full h-auto max-h-[500px]">
+      </div>
     </div>
+  </div>
 </section>
+
 <!--How e dey work ends here-->
 
-<!--Download App Today-->
 
-<section class="relative py-8 md:py-16 px-4 overflow-hidden">
-  <!-- Background with controlled whitespace -->
-  <div class="absolute inset-0" style="
-    background: url('images/lastBg.png') center/cover no-repeat;
-    background-size: 90%;
-    margin: 0 5%;
-  "></div>
-  
-  <!-- Content container -->
-  <div class="container mx-auto relative z-10">
-    <div class="flex flex-col md:flex-row items-center">
-      
-      <!-- Left Column - Content -->
-      <div class="w-full md:w-1/2 px-4 py-8">
-        <h2 class="text-[32px] md:text-[60px] font-bold text-white leading-[1.1] mb-6">
-          DOWNLOAD<br>KEKE APP<br>TODAY!
-        </h2>
-        
-        <div class="flex flex-col sm:flex-row gap-4 mb-8">
-          <a href="#">
-            <img src="images/app store.svg" alt="App Store" class="h-12 md:h-14 w-auto">
-          </a>
-          <a href="#">
-            <img src="images/google play.svg" alt="Google Play" class="h-12 md:h-14 w-auto">
-          </a>
-        </div>
-        
-        <a href="#" class="inline-block bg-yellow-500 text-black px-8 py-3 rounded-lg text-lg font-bold hover:bg-yellow-600">
-          MAKE WE START TOURNEY NOW!
-        </a>
+<!-- Download App Section -->
+<section class="my-12 py-20 md:py-2 px-4 md:px-12">
+  <div  style="background-image: url('images/lastBg.png'); background-size: cover; background-position: center;" class="rounded-xl shadow-lg px-6 md:px-16 py-16 flex flex-col md:flex-row items-center justify-between gap-12" >
+    <!-- Left Content -->
+    <div 
+      class="w-full md:w-1/2 text-center md:text-left space-y-6"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-white text-4xl md:text-5xl font-extrabold leading-tight">
+        Download <br class="hidden md:block" /> KEKE App Today!
+      </h2>
+
+      <div class="flex flex-col sm:flex-row gap-4 items-center md:items-start">
+        <img src="images/app store.svg" alt="App Store" class="w-[200px]" />
+        <img src="images/google play.svg" alt="Google Play" class="w-[200px]" />
       </div>
-      
-      <!-- Right Column - Image -->
-      <div class="w-full md:w-1/2 flex justify-center p-4">
-        <img src="images/Group 2414.svg" alt="App Preview" class="w-full max-w-[300px] md:max-w-[500px]">
-      </div>
+
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-3 px-6 rounded-lg shadow-md transition">
+        MAKE WE START JOURNEY NOW!
+      </button>
+    </div>
+
+    <!-- Right Image -->
+    <div 
+      class="w-full md:w-1/2 flex justify-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      <img src="images/Group 2414.svg" alt="App Preview" class="max-w-[350px] w-full h-auto object-contain" />
     </div>
   </div>
 </section>
@@ -227,7 +255,7 @@
 
 
 <!-- Footer -->
-<footer class="bg-grayBlack py-8 md:py-12 px-4">
+<footer id="footer"  class="bg-grayBlack py-8 md:py-12 px-4">
     <div
         class="container mx-auto flex flex-col justify-between items-center md:items-stretch md:flex-row space-y-6 md:space-y-0 md:space-x-8">
         <!-- Logo -->
@@ -261,6 +289,10 @@
     <div class="text-center text-gray-400 text-sm">
         &copy; 2024 Keke. All rights reserved.
     </div>
+    <div class="text-center text-gray-400 text-sm poppins">
+    Designed by <a href="https://www.linkedin.com/in/kolawole-oluwaseun-0b8b1a1b4/" class="text-yellow-500 hover:text-yellow-400">Afolabi Mariam (Mimi)</a> and developed <a href="https://www.linkedin.com/in/kolawole-oluwaseun-0b8b1a1b4/" class="text-yellow-500 hover:text-yellow-400">Kamiye Oladipo O.</a>
+    </div>
+
 
 </footer>
 
@@ -273,18 +305,5 @@
 <script>
     AOS.init();
 </script>
-<style>
-    @media (max-width: 767px) {
-        footer .container {
-            align-items: center !important;
-        }
-        footer .flex {
-            justify-content: center !important;
-        }
-        footer .text-center {
-            text-align: center !important;
-        }
-    }
-</style>
 </body>
 </html>
